@@ -48,6 +48,11 @@ class LocalDevPublicStream extends PublicStream {
 
   /**
    * Creates a LocalDevPublicStream.
+   *
+   * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
+   *   The Config Factory service.
+   * @param \Drupal\Core\File\FileSystemInterface $fileSystem
+   *   The file system service.
    */
   public function __construct(ConfigFactoryInterface $configFactory, FileSystemInterface $fileSystem) {
     $this->configFactory = $configFactory;
